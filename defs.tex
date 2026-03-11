@@ -1,0 +1,155 @@
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{cite}
+\usepackage{float}
+
+\newcommand{\bcomment}[1]{}
+\newcommand{\TODO}[1]{}
+
+\newcommand{\pth}[1]{\left(#1\right)}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+
+\newcommand{\onebytwo}[2]{\begin{pmatrix} #1 & #2 \end{pmatrix}}
+\newcommand{\twobyone}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\newcommand{\twobytwo}[4]{\begin{pmatrix} #1 & #2 \\ #3 & #4 \end{pmatrix}}
+\newcommand{\onebythree}[3]{\begin{pmatrix} #1 & #2 & #3 \end{pmatrix}}
+\newcommand{\threebyone}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\newcommand{\fourbyone}[4]{\begin{pmatrix} #1 \\ #2 \\ #3 \\ #4 \end{pmatrix}}
+\newcommand{\onebyfour}[4]{\begin{pmatrix} #1 & #2 & #3 & #4 \end{pmatrix}}
+\newcommand{\fivebyone}[5]{\begin{pmatrix} #1 \\ #2 \\ #3 \\ #4 \\#5 \end{pmatrix}}
+
+\newcommand{\threebythree}[9]{\begin{pmatrix} #1 & #2 & #3 \\ #4 & #5 & #6 \\ #7 & #8 & #9 \end{pmatrix}}
+
+
+
+\newcommand{\diag}[1]{\operatorname{diag}(#1)}
+\newcommand{\vspan}{\operatorname{span}}
+\newcommand{\kernel}{\operatorname{kernel}}
+
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\Cov}{\operatorname{Cov}}
+
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfc}{\mathbf{c}}
+\newcommand{\bfd}{\mathbf{d}}
+\newcommand{\bfe}{\mathbf{e}}
+\newcommand{\bff}{\mathbf{f}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\bfh}{\mathbf{h}}
+\newcommand{\bfi}{\mathbf{i}}
+\newcommand{\bfj}{\mathbf{j}}
+\newcommand{\bfk}{\mathbf{k}}
+\newcommand{\bfl}{\mathbf{l}}
+\newcommand{\bfm}{\mathbf{m}}
+\newcommand{\bfp}{\mathbf{p}}
+\newcommand{\bfq}{\mathbf{q}}
+\newcommand{\bfr}{\mathbf{r}}
+\newcommand{\bfs}{\mathbf{s}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfu}{\mathbf{u}}
+\newcommand{\bfv}{\mathbf{v}}
+\newcommand{\bfw}{\mathbf{w}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfz}{\mathbf{z}}
+\newcommand{\bfA}{\mathbf{A}}
+\newcommand{\bfB}{\mathbf{B}}
+\newcommand{\bfG}{\mathbf{G}}
+\newcommand{\bfI}{\mathbf{I}}
+\newcommand{\bfM}{\mathbf{M}}
+\newcommand{\bfX}{\mathbf{X}}
+\newcommand{\bfY}{\mathbf{Y}}
+\newcommand{\mcA}{\mathcal{A}}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\mcC}{\mathcal{C}}
+\newcommand{\mcD}{\mathcal{D}}
+\newcommand{\mcE}{\mathcal{E}}
+\newcommand{\mcF}{\mathcal{F}}
+\newcommand{\mcG}{\mathcal{G}}
+\newcommand{\mcH}{\mathcal{H}}
+\newcommand{\mcI}{\mathcal{I}}
+\newcommand{\mcJ}{\mathcal{J}}
+\newcommand{\mcK}{\mathcal{K}}
+\newcommand{\mcL}{\mathcal{L}}
+\newcommand{\mcM}{\mathcal{M}}
+\newcommand{\mcN}{\mathcal{N}}
+\newcommand{\mcO}{\mathcal{O}}
+\newcommand{\mcP}{\mathcal{P}}
+\newcommand{\mcQ}{\mathcal{Q}}
+\newcommand{\mcR}{\mathcal{R}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\mcT}{\mathcal{T}}
+\newcommand{\mcU}{\mathcal{U}}
+\newcommand{\mcV}{\mathcal{V}}
+\newcommand{\mcW}{\mathcal{W}}
+\newcommand{\mcX}{\mathcal{X}}
+\newcommand{\mcY}{\mathcal{Y}}
+\newcommand{\mcZ}{\mathcal{Z}}
+
+\newcommand{\eq}{\mathrel{\phantom{=}}}
+\newcommand{\matx}{\mathcal{X}}
+\newcommand{\maty}{\mathcal{Y}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\pairing}[2]{\langle #1, #2 \rangle}
+
+
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\zero}{\mathbf{0}}
+
+%\newcommand{\multiset}[2]{\left(\kern-.4em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.4em\right)}
+\newcommand{\multisetds}[2]{\bigg(\kern-.4em\binom{#1}{#2}\kern-.4em\bigg)}
+\newcommand{\multisetin}[2]{\big(\kern-.3em\binom{#1}{#2}\kern-.3em\big)}
+\newcommand{\multisetix}[2]{\left(\kern-.2em\binom{#1}{#2}\kern-.2em\right)}
+
+\newcommand{\two}{\{0,1\}}
+\newcommand{\mtrx}[3]{{#1}^{#2 \times #3}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\mc}[1]{\multicolumn{2}{|c|}{#1}}
+%\newcommand{\qtree}{\textsc{qTree}}
+\newcommand{\pb}{\overline{p}}
+
+\newcommand{\con}{\mathbin{:}}
+\newcommand{\paircon}{\mathbin{++}}
+
+\newcommand{\eql}[1]{\overset{(#1)}{=}}
+\newcommand{\leql}[1]{\overset{(#1)}{\leq}}
+\newcommand{\geql}[1]{\overset{(#1)}{\geq}}
+\newcommand{\propl}[1]{\overset{(#1)}{\propto}}
+\newcommand{\siml}[1]{\overset{(#1)}{\sim}}
+
+\newcommand{\wrap}[1]{\left(#1\right)}
+\newcommand{\stack}[2]{%
+  \begin{IEEEeqnarrayboxm}
+    [][c]{l}
+    #1\\
+    #2
+  \end{IEEEeqnarrayboxm}}
+
+\newcommand{\rstack}[2]{%
+  \begin{IEEEeqnarrayboxm}
+    [][c]{r}
+    #1\\
+    #2
+  \end{IEEEeqnarrayboxm}}
+
+
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\newcommand{\Var}{\operatorname{Var}}

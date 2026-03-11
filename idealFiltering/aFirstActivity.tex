@@ -4,12 +4,34 @@
 \author{Wim Obbels \and Bart Snapp}
 \license{CC: 0}         % replace with an appropriate license, or set it in xmPreamble
 
+\input{../defs}
+\input{../defs-2.tex}
+
 \begin{document}
 \begin{abstract}
     A simple Ximera activity.
 \end{abstract}
 \maketitle
 \label{xim:aFirstActivity}
+
+\section{Ideal low-pass filtering}
+  Cutoff frequency $b$ (ordinary frequency, not angular)
+    \begin{align*}
+      \hat{h}_b(f)
+      &= H_b(j2\pi f) = \operatorname{rect}(\tfrac{f}{2b})\\
+      &= \begin{cases}
+      1 & |\tfrac{f}{2b}| \leq \tfrac{1}{2}\\
+      0 & \tfrac{1}{2} < |\tfrac{f}{2b}|
+    \end{cases}\\
+      &= \begin{cases}
+      1 & |f| \leq b\\
+      0 & b < |f|
+    \end{cases}\\
+      h_b(t)
+      &= 2 b \sinc(2 b t) = 2 b\frac{\sin(2 \pi b t)}{2 \pi b t} = \frac{\sin(2 \pi b t)}{\pi t}
+    \end{align*}
+
+    Region of convergence for $H_b(s) = \tL{h_b}(s)$ is just the imaginary axis.\\
 
 Perhaps the most natural setting for Ximera content is that of a
 \textit{worksheet}. This is some document that may contain discussion as well
